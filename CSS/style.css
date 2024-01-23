@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: white;
+}
+
+h1{
+    color: #131318;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+h2{
+    color: #131318;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+h3{
+    color: #131318;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+p{
+    color: rgba(19, 19, 24, 0.60);
+    font-weight: 500;
+}
+.my-btn{
+    color: #fff;
+    border: 1px solid #FF4240;
+    border-radius: 8px;
+    padding: 10px 22px;
+    background-color: #FF4240;
+    outline: none;
+}
