@@ -41,7 +41,7 @@
 <body class="bg-white">
     <div class="px-5 lg:container lg:w-4/5 mx-auto pb-10">
         <header>
-            <section class="navbar py-8">
+            <section class=" navbar py-8">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -78,22 +78,30 @@
                 </div>
             </section>
             <!-- banner section  -->
-            <section class="">
+            <section class="lg:relative">
                 <div class="carousel w-full">
                     <div id="slide1" class="carousel-item relative w-full">
                         <img src="Images/banner.png" class="w-full" />
-                        <div class="absolute flex items-end transform -translate-y-1/2 bottom-3 left-5">
+                        <div class="absolute  bottom-2 left-2 lg:bottom-5 lg:left-5">
                             <a href="#slide2" class="btn btn-circle mr-3">❮</a>
                             <a href="#slide2" class="btn btn-circle">❯</a>
                         </div>
                     </div>
                     <div id="slide2" class="carousel-item relative w-full">
                         <img src="Images/banner.png" class="w-full" />
-                        <div class="absolute flex items-end transform -translate-y-1/2 bottom-3 left-5">
+                        <div class="absolute bottom-2 left-2 lg:bottom-5 lg:left-5">
                             <a href="#slide1" class="btn btn-circle mr-3">❮</a>
                             <a href="#slide1" class="btn btn-circle">❯</a>
                         </div>
                     </div>
+                </div>
+                <div
+                    class="text-center bg-black text-white py-7 px-2 rounded-lg lg:absolute lg:max-w-[500px] lg:bottom-9 lg:right-9">
+                    <h1 class="text-[18px] lg:text-[24px] font-extrabold mb-3">Meet all the heroes from the field</h1>
+                    <p class="text-[14px]">
+                        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna
+                        in sit nullam proin.
+                    </p>
                 </div>
             </section>
         </header>
