@@ -7,14 +7,206 @@
     <title>Hockeys main</title>
     <link rel="stylesheet" href="CSS/style.css">
 
+    <!-- monrope google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
     <!-- tailwind and daisy ui link  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- coustm color  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'heading-color': '#131318',
+                        'bg-color': '#FF4240',
+                    }
+                }
+            }
+        }
+    </script>
+
 </head>
 
 <body>
+    <div class="px-5 lg:container lg:w-4/5 mx-auto pb-10">
+        <header>
+            <section class="navbar py-7">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-heading-color" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0" class=" dropdown-content mt-3">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <h1 class="text-heading-color font-extrabold text-3xl">Hockey<span class="text-bg-color">'</span>s
+                    </h1>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal text-#424247">
+                        <li><a class="text-bg-color">Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Cases</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <i class="fa-solid fa-magnifying-glass mr-5 text-2xl text-heading-color"></i>
+                    <a class="btn bg-bg-color text-white border-none hover:bg-bg-color">Get Ticket</a>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section class="mt-10">
+                <h1 class="text-heading-color text-3xl font-extrabold text-center">Our New Products</h1>
+                <p class="mt-5 text-center text-heading-color">
+                    Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus
+                    urna in sit nullam proin.
+                </p>
 
+                <!-- product card  -->
+                <div class="grid gap-2 grid-cols-1 lg:grid-cols-2 mt-10">
+
+                    <!-- card 1 -->
+                    <div class="p-2 border-2 rounded-2xl lg:flex gap-5">
+                        <img class="w-full lg:w-2/4" src="Images/product1.png" alt="">
+                        <div class="space-y-3">
+                            <div class="flex gap-5 mt-2">
+                                <p><i class="fa-solid fa-star mr-2 text-[#F99808]"></i>5.0</p>
+                                <p><i class="fa-solid fa-eye mr-2"></i>20</p>
+                                <p><i class="fa-solid fa-heart mr-2"></i>200</p>
+                            </div>
+                            <h1 class="text-heading-color font-extrabold">World Cup Flags Football</h1>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                            <div class="flex justify-between">
+                                <h3 class="text-bg-color font-bold text-[15px]">Price - $22.00</h3>
+                                <p class="text-[15px]"><i class="fa-solid fa-cart-shopping mr-1"></i>Delivery Fee : Free
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="p-2 border-2 rounded-2xl lg:flex gap-5">
+                        <img class="w-full lg:w-2/4" src="Images/product6.png" alt="">
+                        <div class="space-y-3">
+                            <div class="flex gap-5 mt-2">
+                                <p><i class="fa-solid fa-star mr-2 text-[#F99808]"></i>5.0</p>
+                                <p><i class="fa-solid fa-eye mr-2"></i>20</p>
+                                <p><i class="fa-solid fa-heart mr-2"></i>200</p>
+                            </div>
+                            <h1 class="text-heading-color font-extrabold">World Cup Flags Football</h1>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                            <div class="flex justify-between">
+                                <h3 class="text-bg-color font-bold text-[15px]">Price - $22.00</h3>
+                                <p class="text-[15px]"><i class="fa-solid fa-cart-shopping mr-1"></i>Delivery Fee : Free
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="p-2 border-2 rounded-2xl lg:flex gap-5">
+                        <img class="w-full lg:w-2/4" src="Images/product4.png" alt="">
+                        <div class="space-y-3">
+                            <div class="flex gap-5 mt-2">
+                                <p><i class="fa-solid fa-star mr-2 text-[#F99808]"></i>5.0</p>
+                                <p><i class="fa-solid fa-eye mr-2"></i>20</p>
+                                <p><i class="fa-solid fa-heart mr-2"></i>200</p>
+                            </div>
+                            <h1 class="text-heading-color font-extrabold">Cap For Hockeys</h1>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                            <div class="flex justify-between">
+                                <h3 class="text-bg-color font-bold text-[15px]">Price - $22.00</h3>
+                                <p class="text-[15px]"><i class=" fa-solid fa-cart-shopping mr-1"></i>Delivery Fee :
+                                    Free
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="p-2 border-2 rounded-2xl lg:flex gap-5">
+                        <img class="w-full lg:w-2/4" src="Images/product2.png" alt="">
+                        <div class="space-y-3">
+                            <div class="flex gap-5 mt-2">
+                                <p><i class="fa-solid fa-star mr-2 text-[#F99808]"></i>5.0</p>
+                                <p><i class="fa-solid fa-eye mr-2"></i>20</p>
+                                <p><i class="fa-solid fa-heart mr-2"></i>200</p>
+                            </div>
+                            <h1 class="text-heading-color font-extrabold">World Cup Flags Football</h1>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                            <div class="flex justify-between">
+                                <h3 class="text-bg-color font-bold text-[15px]">Price - $22.00</h3>
+                                <p class="text-[15px]"><i class=" fa-solid fa-cart-shopping mr-1"></i>Delivery Fee :
+                                    Free
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 5 -->
+                    <div class="p-2 border-2 rounded-2xl lg:flex gap-5">
+                        <img class="w-full lg:w-2/4" src="Images/product3.png" alt="">
+                        <div class="space-y-3">
+                            <div class="flex gap-5 mt-2">
+                                <p><i class="fa-solid fa-star mr-2 text-[#F99808]"></i>5.0</p>
+                                <p><i class="fa-solid fa-eye mr-2"></i>20</p>
+                                <p><i class="fa-solid fa-heart mr-2"></i>200</p>
+                            </div>
+                            <h1 class="text-heading-color font-extrabold">World Cup Flags Football</h1>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                            <div class="flex justify-between">
+                                <h3 class="text-bg-color font-bold text-[15px]">Price - $22.00</h3>
+                                <p class="text-[15px]"> <i class=" fa-solid fa-cart-shopping mr-1"></i>Delivery Fee :
+                                    Free
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 6 -->
+                    <div class="p-2 border-2 rounded-2xl lg:flex gap-5">
+                        <img class="w-full lg:w-2/4" src="Images/product5.png" alt="">
+                        <div class="space-y-3">
+                            <div class="flex gap-5 mt-2">
+                                <p><i class="fa-solid fa-star mr-2 text-[#F99808]"></i>5.0</p>
+                                <p><i class="fa-solid fa-eye mr-2"></i>20</p>
+                                <p><i class="fa-solid fa-heart mr-2"></i>200</p>
+                            </div>
+                            <h1 class="text-heading-color font-extrabold">World Cup Flags Football</h1>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                            <div class="flex justify-between">
+                                <h3 class="text-bg-color font-bold text-[15px]">Price - $22.00</h3>
+                                <p class="text-[15px]"><i class=" fa-solid fa-cart-shopping mr-1"></i>Delivery Fee :
+                                    Free
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
